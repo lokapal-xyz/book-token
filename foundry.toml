@@ -1,0 +1,46 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+# Ignore the SMTChecker warnings by their specific error codes:
+# 8158: Solver z3 was selected but not available.
+# 7649: CHC analysis not possible (no Horn solver).
+# 3860: TEST contract too big to be deployed on Mainnet.
+ignored_error_codes = [8158, 7649, 3860]
+
+remappings = [
+    '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/' ,
+]
+
+[lint]
+exclude_lints = ["mixed-case-function", "mixed-case-variable", "erc20-unchecked-transfer"]
+
+# RPC endpoints
+[rpc_endpoints]
+base-sepolia = "${BASE_SEPOLIA_RPC_URL}"
+base = "${BASE_RPC_URL}"
+
+# Etherscan API keys for contract verification
+[etherscan]
+base-sepolia = { key = "${BASESCAN_API_KEY}", url = "https://api-sepolia.basescan.org/api" }
+base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
+
+
+# Additional compiler settings
+[profile.default.model_checker]
+contracts = { "src/FMAOBookTokens.sol" = ["FMAOBookTokens"] }
+engine = "chc"
+timeout = 10000
+targets = ["assert", "underflow", "overflow", "divByZero", "constantCondition", "popEmptyArray", "outOfBounds"]
+
+# Permission to read 'deployments' folder
+fs_permissions = [
+    { access = "read", path = "./" },
+    { access = "read", path = "./deployments" }
+]
+
+# Formatting
+[fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = true

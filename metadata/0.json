@@ -1,0 +1,59 @@
+{
+  "name": "From Many, as One - Book 0: From the Plexus",
+  "description": "Semi-Fungible Token (ERC-1155) representing community support for Book 0 of the web serial From Many, as One. Unlimited supply, fixed price, no artificial scarcity.",
+  "image": "ipfs://bafybeiaouhewkf6j7qcfmjofrwc74gp23hni7pqvxbccnppnz5igbxb6tq/book-0.gif",
+  "animation_url": "ipfs://bafybeiaouhewkf6j7qcfmjofrwc74gp23hni7pqvxbccnppnz5igbxb6tq/book-0.gif",
+  "external_url": "https://www.lokapal.xyz/books/book-0.gif",
+  "properties": {
+    "logline": "Four cyberpunk deities clash over competing worldviews when new members join their governing council, turning philosophical differences into a high-stakes power struggle for cosmic control.",
+    "category": "Literature",
+    "type": "Book Token"
+  },
+  "attributes": [
+    {
+      "trait_type": "Author",
+      "value": "lokapal.eth"
+    },
+    {
+      "trait_type": "Series",
+      "value": "From Many, as One"
+    },
+    {
+      "trait_type": "Book Number",
+      "value": 0
+    },
+    {
+      "trait_type": "Book Title",
+      "value": "From the Plexus"
+    },
+    {
+      "trait_type": "Genre",
+      "value": "Political Fantasy"
+    },
+    {
+      "trait_type": "Blockchain",
+      "value": "Base"
+    },
+    {
+      "display_type": "date",
+      "trait_type": "Released Date",
+      "value": 1730246400
+    }
+  ],
+  "lit3": {
+    "frameworks": ["Token", "Ledger", "Permanence", "Governance"],
+    "ledger_contract": "0xC88408A3a96Db318C5C79B0F8977eF0E7FE09f22",
+    "ledger_network": "Base Sepolia",
+    "canonical_text": {
+      "normalization_protocol": "HNP-2",
+      "hash_algorithm": "SHA-256",
+      "hash": "pending"
+    },
+    "storage": {
+      "primary": "https://www.lokapal.xyz/en/fmao/fmao/book-0/shard-0",
+      "backup": "pending"
+    },
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  }
+}
