@@ -42,8 +42,8 @@
   ],
   "lit3": {
     "frameworks": ["Token", "Ledger", "Permanence", "Governance"],
-    "ledger_contract": "0xC88408A3a96Db318C5C79B0F8977eF0E7FE09f22",
-    "ledger_network": "Base Sepolia",
+    "ledger_contract": "0x48051661a6B1779fe4fB01Caf578e9ca45e4A4f3",
+    "ledger_network": "Base",
     "canonical_text": {
       "normalization_protocol": "HNP-2",
       "hash_algorithm": "SHA-256",
